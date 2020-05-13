@@ -46,6 +46,6 @@ if __name__ == "__main__":
     w, h = top_row.wrapOn(p, 0, 0)
     width, height = getattr(p, '_pagesize')
     print(0.75 * inch, 0.5 * inch, w, h)
-    top_row.drawOn(p, 2*inch, height - inch)
+    top_row.drawOn(p, (width - w) / 2, height - inch)
     p.showPage()
     p.save()
